@@ -32,10 +32,10 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBoxClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblCatgd = new System.Windows.Forms.Label();
+            this.lblCatId = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.txtCName = new System.Windows.Forms.TextBox();
+            this.txtCatName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnBoxClose)).BeginInit();
@@ -52,17 +52,18 @@
             this.btnClear.TabIndex = 38;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnBoxClose
             // 
             this.btnBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("btnBoxClose.Image")));
-            this.btnBoxClose.Location = new System.Drawing.Point(519, 3);
+            this.btnBoxClose.Location = new System.Drawing.Point(515, 0);
             this.btnBoxClose.Name = "btnBoxClose";
-            this.btnBoxClose.Size = new System.Drawing.Size(22, 17);
+            this.btnBoxClose.Size = new System.Drawing.Size(29, 29);
             this.btnBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBoxClose.TabIndex = 8;
             this.btnBoxClose.TabStop = false;
-         
+            this.btnBoxClose.Click += new System.EventHandler(this.btnBoxClose_Click);
             // 
             // label1
             // 
@@ -75,16 +76,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Catergory Module ";
             // 
-            // lblCatgd
+            // lblCatId
             // 
-            this.lblCatgd.AutoSize = true;
-            this.lblCatgd.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCatgd.Location = new System.Drawing.Point(12, 111);
-            this.lblCatgd.Name = "lblCatgd";
-            this.lblCatgd.Size = new System.Drawing.Size(77, 17);
-            this.lblCatgd.TabIndex = 39;
-            this.lblCatgd.Text = "category id";
-            
+            this.lblCatId.AutoSize = true;
+            this.lblCatId.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCatId.Location = new System.Drawing.Point(12, 111);
+            this.lblCatId.Name = "lblCatId";
+            this.lblCatId.Size = new System.Drawing.Size(77, 17);
+            this.lblCatId.TabIndex = 39;
+            this.lblCatId.Text = "category id";
             // 
             // btnSave
             // 
@@ -96,6 +96,7 @@
             this.btnSave.TabIndex = 37;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
@@ -107,13 +108,14 @@
             this.btnUpdate.TabIndex = 36;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // txtCName
+            // txtCatName
             // 
-            this.txtCName.Location = new System.Drawing.Point(124, 59);
-            this.txtCName.Name = "txtCName";
-            this.txtCName.Size = new System.Drawing.Size(360, 20);
-            this.txtCName.TabIndex = 33;
+            this.txtCatName.Location = new System.Drawing.Point(124, 59);
+            this.txtCatName.Name = "txtCatName";
+            this.txtCatName.Size = new System.Drawing.Size(360, 20);
+            this.txtCatName.TabIndex = 33;
             // 
             // label2
             // 
@@ -142,10 +144,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 145);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.lblCatgd);
+            this.Controls.Add(this.lblCatId);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.txtCName);
+            this.Controls.Add(this.txtCatName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -164,10 +166,10 @@
         public System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.PictureBox btnBoxClose;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label lblCatgd;
+        public System.Windows.Forms.Label lblCatId;
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.Button btnUpdate;
-        public System.Windows.Forms.TextBox txtCName;
+        public System.Windows.Forms.TextBox txtCatName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
     }

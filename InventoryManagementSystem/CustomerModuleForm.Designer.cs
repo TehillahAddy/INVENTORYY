@@ -59,9 +59,9 @@
             // btnBoxClose
             // 
             this.btnBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("btnBoxClose.Image")));
-            this.btnBoxClose.Location = new System.Drawing.Point(500, 3);
+            this.btnBoxClose.Location = new System.Drawing.Point(495, 0);
             this.btnBoxClose.Name = "btnBoxClose";
-            this.btnBoxClose.Size = new System.Drawing.Size(22, 17);
+            this.btnBoxClose.Size = new System.Drawing.Size(30, 26);
             this.btnBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBoxClose.TabIndex = 8;
             this.btnBoxClose.TabStop = false;

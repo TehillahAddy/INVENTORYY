@@ -31,16 +31,12 @@ namespace InventoryManagementSystem
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            try
+             try
             {
-                if (txtPass.Text != label6.Text)
-                {
-                    MessageBox.Show("Password did not match!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+              
                 if (MessageBox.Show("Are you sure you want to save this user?", "Saving Record",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
                     {
-                cm= new SqlCommand("INSERT INTO tbUser(username,fullname,password,phone)VALUES(@username,@fullname,@password,@phone)", con);
+                cm= new SqlCommand("INSERT INTO TbUser(username,fullname,password,phone)VALUES(@username,@fullname,@password,@phone)", con);
                     cm.Parameters.AddWithValue("@username", txtUserName.Text);
                     cm.Parameters.AddWithValue("@fullname", txtFullName.Text);
                     cm.Parameters.AddWithValue("@password", txtPass.Text);
@@ -86,14 +82,10 @@ namespace InventoryManagementSystem
         {
             try
             {
-                if (txtPass.Text != label6.Text)
-                {
-                    MessageBox.Show("Password did not match!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                
                 if (MessageBox.Show("Are you sure you want to update this user?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cm = new SqlCommand("UPDATE tbUser SET fullname = @fullname, password=@password, phone=@phone WHERE username LIKE '"+txtUserName.Text +"' ",con);
+                    cm = new SqlCommand("UPDATE TbUser SET fullname = @fullname, password=@password, phone=@phone WHERE username LIKE '"+txtUserName.Text +"' ",con);
                     cm.Parameters.AddWithValue("@Username", txtUserName.Text);
                     cm.Parameters.AddWithValue("@fullname", txtFullName.Text);
                     cm.Parameters.AddWithValue("@password", txtPass.Text);
@@ -117,6 +109,11 @@ namespace InventoryManagementSystem
         }
 
         private void UserModuleForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtRePass_TextChanged(object sender, EventArgs e)
         {
 
         }

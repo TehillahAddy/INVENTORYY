@@ -63,9 +63,9 @@
             // btnBoxClose
             // 
             this.btnBoxClose.Image = ((System.Drawing.Image)(resources.GetObject("btnBoxClose.Image")));
-            this.btnBoxClose.Location = new System.Drawing.Point(502, 0);
+            this.btnBoxClose.Location = new System.Drawing.Point(496, 0);
             this.btnBoxClose.Name = "btnBoxClose";
-            this.btnBoxClose.Size = new System.Drawing.Size(22, 17);
+            this.btnBoxClose.Size = new System.Drawing.Size(28, 29);
             this.btnBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBoxClose.TabIndex = 8;
             this.btnBoxClose.TabStop = false;
@@ -188,6 +188,7 @@
             this.txtRePass.Name = "txtRePass";
             this.txtRePass.Size = new System.Drawing.Size(360, 20);
             this.txtRePass.TabIndex = 17;
+            this.txtRePass.TextChanged += new System.EventHandler(this.txtRePass_TextChanged);
             // 
             // label6
             // 

@@ -48,12 +48,7 @@ namespace InventoryManagementSystem
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-            UserModuleForm userModule = new UserModuleForm();
-            userModule.btnSave.Enabled = true;
-            userModule.btnUpdate.Enabled = true;
-            userModule.txtUserName.Enabled = true;
-            userModule.ShowDialog();
-            LoadUser();
+            
         }
 
         private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -91,6 +86,16 @@ namespace InventoryManagementSystem
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnProduct_Click_1(object sender, EventArgs e)
+        {
+            UserModuleForm userModule = new UserModuleForm();
+            userModule.btnSave.Enabled = true;
+            userModule.btnUpdate.Enabled = true;
+            userModule.txtUserName.Enabled = true;
+            userModule.ShowDialog();
+            LoadUser();
         }
     }
 
