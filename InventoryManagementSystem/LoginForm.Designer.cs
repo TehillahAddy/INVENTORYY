@@ -30,6 +30,7 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -51,7 +52,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Blue;
+            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBoxClose);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -59,6 +61,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(278, 60);
             this.panel1.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Red;
+            this.label5.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(87, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(118, 14);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "SHOPRITE GHANA";
             // 
             // pictureBoxClose
             // 
@@ -74,13 +88,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(61, 27);
+            this.label3.Location = new System.Drawing.Point(56, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 16);
+            this.label3.Size = new System.Drawing.Size(219, 15);
             this.label3.TabIndex = 6;
-            this.label3.Text = "KINGSMAN MANAGEMENT SYSTEM";
+            this.label3.Text = "MANAGEMENT SYSTEM";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox2
@@ -132,7 +146,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Blue;
+            this.btnLogin.BackColor = System.Drawing.Color.Red;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -148,9 +162,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(59, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(54, 60);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 96);
+            this.pictureBox1.Size = new System.Drawing.Size(168, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -158,20 +172,21 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(69, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 16);
+            this.label4.Size = new System.Drawing.Size(128, 15);
             this.label4.TabIndex = 6;
             this.label4.Text = "Please Login First";
             // 
             // checkBoxPass
             // 
             this.checkBoxPass.AutoSize = true;
+            this.checkBoxPass.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxPass.Location = new System.Drawing.Point(147, 410);
             this.checkBoxPass.Name = "checkBoxPass";
-            this.checkBoxPass.Size = new System.Drawing.Size(102, 17);
+            this.checkBoxPass.Size = new System.Drawing.Size(117, 21);
             this.checkBoxPass.TabIndex = 7;
             this.checkBoxPass.Text = "Show Password";
             this.checkBoxPass.UseVisualStyleBackColor = true;
@@ -180,11 +195,11 @@
             // IblClear
             // 
             this.IblClear.AutoSize = true;
-            this.IblClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IblClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.IblClear.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IblClear.ForeColor = System.Drawing.Color.Red;
             this.IblClear.Location = new System.Drawing.Point(27, 412);
             this.IblClear.Name = "IblClear";
-            this.IblClear.Size = new System.Drawing.Size(36, 15);
+            this.IblClear.Size = new System.Drawing.Size(43, 17);
             this.IblClear.TabIndex = 8;
             this.IblClear.Text = "Clear";
             this.IblClear.Click += new System.EventHandler(this.IblClear_Click);
@@ -234,6 +249,7 @@
 		private System.Windows.Forms.PictureBox pictureBoxClose;
         public System.Windows.Forms.TextBox txtname;
         public System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.Label label5;
     }
 }
 

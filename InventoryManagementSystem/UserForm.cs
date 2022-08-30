@@ -42,16 +42,29 @@ namespace InventoryManagementSystem
 
            
 
-
-
-        
-
-        private void btnProduct_Click(object sender, EventArgs e)
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+           
         }
 
-        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+      
+        private void customerButton1_Click(object sender, EventArgs e)
+        {
+            var newform = new MainForm();
+            this.Hide();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            UserModuleForm userModule = new UserModuleForm();
+            userModule.btnSave.Enabled = true;
+            userModule.btnUpdate.Enabled = false;
+            userModule.txtUserName.Enabled = true;
+            userModule.ShowDialog();
+            LoadUser();
+        }
+
+        private void dgvUser_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dgvUser.Columns[e.ColumnIndex].Name;
             if (colName == "Edittt")
@@ -64,37 +77,22 @@ namespace InventoryManagementSystem
 
                 userModule.btnSave.Enabled = false;
                 userModule.btnUpdate.Enabled = true;
-                userModule.txtUserName.Enabled = false;
                 userModule.ShowDialog();
+
 
             }
             else if (colName == "Delete")
             {
-                if(MessageBox.Show("Are you sure you want to delete this user?","Delete Record",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+                if (MessageBox.Show("Are you sure you want to delete this user?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     con.Open();
-                    cm= new SqlCommand("DELETE FROM TbUser WHERE username LIKE '"+ dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() +"'",con);
+                    cm = new SqlCommand("DELETE FROM TbUser WHERE username LIKE '" + dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
                     cm.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Record has been successfully deleted!");
                 }
 
             }
-            LoadUser();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnProduct_Click_1(object sender, EventArgs e)
-        {
-            UserModuleForm userModule = new UserModuleForm();
-            userModule.btnSave.Enabled = true;
-            userModule.btnUpdate.Enabled = true;
-            userModule.txtUserName.Enabled = true;
-            userModule.ShowDialog();
             LoadUser();
         }
     }

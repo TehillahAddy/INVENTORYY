@@ -108,14 +108,8 @@ namespace InventoryManagementSystem
             }
         }
 
-        private void UserModuleForm_Load(object sender, EventArgs e)
-        {
+       
 
-        }
-
-        private void txtRePass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

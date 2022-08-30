@@ -87,5 +87,11 @@ namespace InventoryManagementSystem
         {
             LoadProduct();
         }
+
+        private void customerButton1_Click(object sender, EventArgs e)
+        {
+            var newform = new MainForm();
+            this.Hide();
+        }
     }
 }
