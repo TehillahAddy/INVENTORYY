@@ -19,3 +19,5 @@ C:\Users\DELL\source\repos\InventoryManagementSystem\InventoryManagementSystem\o
 C:\Users\DELL\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.pdb
 C:\Users\DELL\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.CusForm.resources
 C:\Users\DELL\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.CusModuleForm.resources
+C:\Users\DELL\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.OrderForm.resources
+C:\Users\DELL\source\repos\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.OrderModuleForm.resources
