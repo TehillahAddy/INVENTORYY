@@ -75,7 +75,8 @@ namespace InventoryManagementSystem
                     {
                         MessageBox.Show("Welcome" + dr["fullname"].ToString() + " ! ", "ACESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         MainForm main = new MainForm();
-                        main.ShowDialog();
+                    this.Hide();
+                    main.ShowDialog();
                     }
                     else
                     {

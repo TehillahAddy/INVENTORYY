@@ -199,5 +199,7 @@ namespace InventoryManagementSystem
             dr.Close();
             con.Close();
         }
+
+       
     }
 }

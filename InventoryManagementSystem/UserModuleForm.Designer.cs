@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.btnBoxClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -59,7 +59,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(524, 41);
             this.panel1.TabIndex = 0;
-           
             // 
             // btnBoxClose
             // 
@@ -82,7 +81,6 @@
             this.label1.Size = new System.Drawing.Size(115, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "User Module ";
-           
             // 
             // label2
             // 
@@ -93,7 +91,6 @@
             this.label2.Size = new System.Drawing.Size(78, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "User Name :";
-           
             // 
             // txtUserName
             // 
@@ -101,7 +98,6 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(360, 20);
             this.txtUserName.TabIndex = 2;
-           
             // 
             // txtPhone
             // 
@@ -109,7 +105,6 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(360, 20);
             this.txtPhone.TabIndex = 8;
-           
             // 
             // label5
             // 
@@ -120,7 +115,6 @@
             this.label5.Size = new System.Drawing.Size(48, 16);
             this.label5.TabIndex = 7;
             this.label5.Text = "Phone :";
-            
             // 
             // txtFullName
             // 
@@ -128,7 +122,6 @@
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(360, 20);
             this.txtFullName.TabIndex = 10;
-           
             // 
             // label3
             // 
@@ -139,7 +132,6 @@
             this.label3.Size = new System.Drawing.Size(72, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "Full Name :";
-            
             // 
             // txtPass
             // 
@@ -147,7 +139,6 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(360, 20);
             this.txtPass.TabIndex = 12;
-            
             // 
             // label4
             // 
@@ -158,7 +149,6 @@
             this.label4.Size = new System.Drawing.Size(69, 17);
             this.label4.TabIndex = 11;
             this.label4.Text = "Password :";
-           
             // 
             // btnUpdate
             // 
@@ -208,7 +198,6 @@
             this.txtRePass.Name = "txtRePass";
             this.txtRePass.Size = new System.Drawing.Size(360, 20);
             this.txtRePass.TabIndex = 17;
-           
             // 
             // label6
             // 
@@ -219,7 +208,6 @@
             this.label6.Size = new System.Drawing.Size(110, 16);
             this.label6.TabIndex = 16;
             this.label6.Text = "Re-type Password :";
-          
             // 
             // UserModuleForm
             // 
@@ -244,7 +232,6 @@
             this.Name = "UserModuleForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserModuleForm";
-            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBoxClose)).EndInit();
