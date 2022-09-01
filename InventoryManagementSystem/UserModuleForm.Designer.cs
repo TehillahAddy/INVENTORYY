@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserModuleForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnBoxClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,13 +46,16 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.txtRePass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.checkBoxPass = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBoxClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnBoxClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -59,6 +63,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(524, 41);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(188, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(161, 38);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // btnBoxClose
             // 
@@ -74,11 +88,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(-4, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 20);
+            this.label1.Size = new System.Drawing.Size(107, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "User Module ";
             // 
@@ -139,6 +153,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(360, 20);
             this.txtPass.TabIndex = 12;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -156,7 +171,7 @@
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(256, 273);
+            this.btnUpdate.Location = new System.Drawing.Point(261, 320);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(104, 35);
             this.btnUpdate.TabIndex = 13;
@@ -170,7 +185,7 @@
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(146, 273);
+            this.btnSave.Location = new System.Drawing.Point(151, 320);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(104, 35);
             this.btnSave.TabIndex = 14;
@@ -184,7 +199,7 @@
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(366, 273);
+            this.btnClear.Location = new System.Drawing.Point(371, 320);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(104, 35);
             this.btnClear.TabIndex = 15;
@@ -198,6 +213,7 @@
             this.txtRePass.Name = "txtRePass";
             this.txtRePass.Size = new System.Drawing.Size(360, 20);
             this.txtRePass.TabIndex = 17;
+            this.txtRePass.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -209,11 +225,24 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Re-type Password :";
             // 
+            // checkBoxPass
+            // 
+            this.checkBoxPass.AutoSize = true;
+            this.checkBoxPass.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPass.Location = new System.Drawing.Point(407, 268);
+            this.checkBoxPass.Name = "checkBoxPass";
+            this.checkBoxPass.Size = new System.Drawing.Size(117, 21);
+            this.checkBoxPass.TabIndex = 18;
+            this.checkBoxPass.Text = "Show Password";
+            this.checkBoxPass.UseVisualStyleBackColor = true;
+            this.checkBoxPass.CheckedChanged += new System.EventHandler(this.checkBoxPass_CheckedChanged);
+            // 
             // UserModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 343);
+            this.ClientSize = new System.Drawing.Size(524, 382);
+            this.Controls.Add(this.checkBoxPass);
             this.Controls.Add(this.txtRePass);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnClear);
@@ -234,6 +263,7 @@
             this.Text = "UserModuleForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBoxClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,5 +288,7 @@
         public System.Windows.Forms.TextBox txtPass;
         public System.Windows.Forms.TextBox txtRePass;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.CheckBox checkBoxPass;
     }
 }

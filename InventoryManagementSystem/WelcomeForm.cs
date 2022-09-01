@@ -18,16 +18,20 @@ namespace InventoryManagementSystem
             timer1.Start();
         }
         int startPoint = 0;
+        int endPoint = 6000;
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            startPoint += 2;
-            progressBar1.Value = startPoint;
-            if (progressBar1.Value == 100)
+            startPoint += 0;
+            if(endPoint == 6000)
+
+            
+          
 
 
             {
-                progressBar1.Value = startPoint;
+              
                 timer1.Stop();
                 LoginForm login = new LoginForm();
                 this.Hide();
@@ -36,5 +40,7 @@ namespace InventoryManagementSystem
 
 
         }
+
+        
     }
 }

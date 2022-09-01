@@ -108,7 +108,16 @@ namespace InventoryManagementSystem
             }
         }
 
-       
+        private void checkBoxPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxPass.Checked == false)
+                txtPass.UseSystemPasswordChar = true;
+           
+           
+
+            else
+                txtPass.UseSystemPasswordChar = false;
+        }
 
         
     }

@@ -88,5 +88,7 @@ namespace InventoryManagementSystem
             var newform = new MainForm();
             this.Hide();
         }
+
+        
     }
 }
