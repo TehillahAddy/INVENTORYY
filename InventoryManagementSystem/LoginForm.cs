@@ -98,5 +98,15 @@ namespace InventoryManagementSystem
 			newForm.Show();
            
         }
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+            
+        }
+
+		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			lblValue.Text = comboBox.Text;
+		}
 	}
 }

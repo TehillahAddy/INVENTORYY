@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,7 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -64,6 +65,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
@@ -76,12 +78,20 @@
             this.panel1.Size = new System.Drawing.Size(692, 436);
             this.panel1.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.Location = new System.Drawing.Point(6, 107);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(680, 10);
+            this.panel3.TabIndex = 25;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 359);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 366);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(179, 66);
+            this.pictureBox5.Size = new System.Drawing.Size(167, 59);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 24;
             this.pictureBox5.TabStop = false;
@@ -90,7 +100,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(152, 207);
+            this.pictureBox4.Location = new System.Drawing.Point(155, 191);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(416, 117);
             this.pictureBox4.TabIndex = 23;
@@ -262,7 +272,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(520, 405);
+            this.label1.Location = new System.Drawing.Point(281, 401);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 20);
             this.label1.TabIndex = 19;
@@ -279,13 +289,20 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
+            // button2
             // 
-            this.panel3.BackColor = System.Drawing.Color.Red;
-            this.panel3.Location = new System.Drawing.Point(6, 107);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(680, 10);
-            this.panel3.TabIndex = 25;
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(623, 401);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(63, 24);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Logout";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MainForm
             // 
@@ -337,5 +354,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button2;
     }
 }

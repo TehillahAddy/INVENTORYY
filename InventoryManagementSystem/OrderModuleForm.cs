@@ -205,5 +205,20 @@ namespace InventoryManagementSystem
             var newform = new BarcodeForm();
             this.Hide();
         }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("SHOPRITE", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Red, new Point(230));
+            e.Graphics.DrawString("", new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Red, new Point(70,70));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                printDocument1.Print();
+            }
+        }
     }
 }
