@@ -48,10 +48,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboCat = new System.Windows.Forms.ComboBox();
             this.lblPid = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBoxClose)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtPDes
@@ -77,7 +79,7 @@
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(366, 273);
+            this.btnClear.Location = new System.Drawing.Point(371, 6);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(104, 35);
             this.btnClear.TabIndex = 29;
@@ -91,7 +93,7 @@
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(146, 273);
+            this.btnSave.Location = new System.Drawing.Point(151, 6);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(104, 35);
             this.btnSave.TabIndex = 28;
@@ -105,7 +107,7 @@
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(256, 273);
+            this.btnUpdate.Location = new System.Drawing.Point(261, 6);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(104, 35);
             this.btnUpdate.TabIndex = 27;
@@ -184,7 +186,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(498, 41);
+            this.panel1.Size = new System.Drawing.Size(480, 41);
             this.panel1.TabIndex = 18;
             // 
             // pictureBox2
@@ -200,7 +202,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(470, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(452, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 29);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -223,11 +225,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-4, 9);
+            this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 19);
+            this.label1.Size = new System.Drawing.Size(145, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Product Module ";
+            this.label1.Text = "Product Segment ";
             // 
             // comboCat
             // 
@@ -237,30 +239,40 @@
             this.comboCat.Name = "comboCat";
             this.comboCat.Size = new System.Drawing.Size(360, 21);
             this.comboCat.TabIndex = 32;
-    
             // 
             // lblPid
             // 
             this.lblPid.AutoSize = true;
-            this.lblPid.Location = new System.Drawing.Point(15, 302);
+            this.lblPid.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblPid.Location = new System.Drawing.Point(4, 17);
             this.lblPid.Name = "lblPid";
             this.lblPid.Size = new System.Drawing.Size(54, 13);
             this.lblPid.TabIndex = 33;
             this.lblPid.Text = "product id";
             this.lblPid.Visible = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Controls.Add(this.lblPid);
+            this.panel2.Controls.Add(this.btnSave);
+            this.panel2.Controls.Add(this.btnUpdate);
+            this.panel2.Controls.Add(this.btnClear);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 280);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(480, 44);
+            this.panel2.TabIndex = 34;
+            // 
             // ProductModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 324);
-            this.Controls.Add(this.lblPid);
+            this.ClientSize = new System.Drawing.Size(480, 324);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.comboCat);
             this.Controls.Add(this.txtPDes);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtPPrice);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPQty);
@@ -278,6 +290,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBoxClose)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +318,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label lblPid;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel2;
     }
 }

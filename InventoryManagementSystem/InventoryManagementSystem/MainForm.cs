@@ -73,9 +73,13 @@ namespace InventoryManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var newForm = new LoginForm();
-            newForm.Show();
-            this.Hide();
+            if (MessageBox.Show("Are you sure you want to Logout?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                var newForm = new LoginForm();
+                newForm.Show();
+                this.Hide();
+            }
+          
         }
     }
     
