@@ -31,7 +31,7 @@ namespace InventoryManagementSystem
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            try
+             try
             {
               
                 if (MessageBox.Show("Are you sure you want to save this user?", "Saving Record",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
@@ -108,14 +108,17 @@ namespace InventoryManagementSystem
             }
         }
 
-        private void UserModuleForm_Load(object sender, EventArgs e)
+        private void checkBoxPass_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBoxPass.Checked == false)
+                txtPass.UseSystemPasswordChar = true;
+           
+           
 
+            else
+                txtPass.UseSystemPasswordChar = false;
         }
 
-        private void txtRePass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

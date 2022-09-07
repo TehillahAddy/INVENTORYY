@@ -73,9 +73,10 @@ namespace InventoryManagementSystem
                     if (dr.Read())
 
                     {
-                        MessageBox.Show("Welcome" + dr["fullname"].ToString() + " ! ", "ACESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Welcome" +   dr["fullname"].ToString() + " ! ", "ACESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         MainForm main = new MainForm();
-                        main.ShowDialog();
+                    this.Hide();
+                    main.ShowDialog();
                     }
                     else
                     {
@@ -89,6 +90,23 @@ namespace InventoryManagementSystem
 			{
 				MessageBox.Show(ex.Message);
 			}
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+            var newForm = new UserModuleForm();
+			newForm.Show();
+           
+        }
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+            
+        }
+
+		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			lblValue.Text = comboBox.Text;
 		}
 	}
 }
