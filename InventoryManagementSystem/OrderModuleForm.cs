@@ -208,8 +208,13 @@ namespace InventoryManagementSystem
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("SHOPRITE", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Red, new Point(230));
-            e.Graphics.DrawString("", new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Red, new Point(70,70));
+            e.Graphics.DrawString("SHOPRITE INVENT. MGMNT. SYSTEM", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Red, new Point(210));
+            e.Graphics.DrawString("Product ID:3", new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Black, new Point(100,70));
+            e.Graphics.DrawString("Customer Name:Cristiano", new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Black, new Point(100, 100));
+            e.Graphics.DrawString("Date:07/09/2022", new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Black, new Point(100, 130));
+            e.Graphics.DrawString("Total Amount:5000", new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Black, new Point(100, 160));
+            e.Graphics.DrawString("CodeSpace", new Font("Century Gothic", 25, FontStyle.Italic), Brushes.Red, new Point(230, 240));
+
         }
 
         private void button2_Click(object sender, EventArgs e)
